@@ -5,12 +5,12 @@ public:
         for(int i = 0 ; i < k ; i++) {
             total += arr[i];
         }
-        if(total/k >= threshold) {
+        if(total >= k*threshold) {
             count++;
         }
         for(int i = k ; i < arr.size() ; i++) {
             total += arr[i]-arr[i-k];
-            if(total/k >= threshold) {
+            if(total >= k*threshold) {
                 count++;
             }
         }
