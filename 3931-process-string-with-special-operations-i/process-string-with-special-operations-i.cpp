@@ -1,7 +1,7 @@
 class Solution {
 public:
     string processStr(string s) {
-        string s1;
+        string s1 = "";
         for(int i = 0 ; i  < s.size() ; i++) {
             char ch = s[i];
             if(ch=='*')  {
